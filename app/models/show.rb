@@ -6,6 +6,6 @@ class Show < ActiveRecord::Base
     Character.collect.where("actor_id: = show_id") do |m|
 binding.pry       
   
- 
+ end
 end
 end
