@@ -6,7 +6,7 @@ class Show < ActiveRecord::Base
     x = [] 
     Character.select  do |m|
      x <<  "#{m.actor.first_name} #{ m.actor.last_name}"
-    binding.pry 
+    #binding.pry 
  end
 end
 end
