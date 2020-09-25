@@ -3,7 +3,7 @@ class Show < ActiveRecord::Base
   has_many :actors, through: :characters
   belongs_to :network 
   def actors_list 
-    Character  do |m|
+    Character.each  do |m|
 binding.pry       
   
  end
