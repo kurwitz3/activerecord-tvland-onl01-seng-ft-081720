@@ -3,7 +3,7 @@ class Show < ActiveRecord::Base
   has_many :actors, through: :characters
   belongs_to :network 
   def actors_list 
-    Character.collect.where("actor_id: = show_id") do |m|
+    Character.collect  do |m|
 binding.pry       
   
  end
