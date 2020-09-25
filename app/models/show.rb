@@ -5,7 +5,7 @@ class Show < ActiveRecord::Base
   def actors_list 
     x = [] 
     Character.select  do |m|
-     x <<  m
+     x <<  
   
  end
 end
