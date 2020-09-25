@@ -3,9 +3,10 @@ class Show < ActiveRecord::Base
   has_many :actors, through: :characters
   belongs_to :network 
   def actors_list 
-    m = [] 
+    x = [] 
     Character.select  do |m|
-     m <<  m.actor.first_name  
+     x <<  "#{m.actor.first_name} #{  
+    
 binding.pry       
   
  end
