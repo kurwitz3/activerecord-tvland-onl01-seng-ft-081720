@@ -8,5 +8,6 @@ class Show < ActiveRecord::Base
      x <<  "#{m.actor.first_name} #{ m.actor.last_name}"
     #binding.pry 
  end
+ x
 end
 end
